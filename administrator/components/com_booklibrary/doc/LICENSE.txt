@@ -1,0 +1,59 @@
+BookLibrary Free License Agreement
+=================================
+
+BookLibrary Free is an edition of the BookLibrary component for Joomla, with 
+enhanced functionality compared to the free edition released under GNU/GPL 
+but available for a fee (to cover development costs). 
+
+By purchasing a copy of BookLibrary Free, you agree to the terms in this 
+License Agreement. If you do not agree to the terms of this License Agreement, 
+do not purchase and do not use this software. 
+
+GRANT OF LICENSE
+----------------
+www.ordasoft.com grants to you a non-exclusive right to use the 
+BookLibrary Free component for Joomla (hereinafter called the "Software") in 
+accordance with the terms contained in this Agreement. 
+You may use the Software on a single domain.
+
+
+INSTALLATION
+------------
+Purchasing a license of the Software entitles you to install and run the 
+Software within ONE installation of Joomla, so each license of the Software 
+is valid ONLY for one domain or sub domain. 
+
+
+OWNERSHIP OF SOFTWARE
+---------------------
+www.ordasoft.com retains the copyright, title, and intellectual 
+ownership of the code and of the written materials which were added to the 
+Software to create the Free edition.
+
+
+COPIES
+------
+You may make as many copies of the Software as you wish, as long as you 
+guarantee that the software can only be used on 1 (one) domain (Joomla  
+installation) in any one instance. You agree not to distribute copies of 
+the Software or accompanying written materials to others.
+
+
+DISCLAIMER OF WARRANTY
+----------------------
+This Software and the accompanying files are distributed "as is" and 
+without warranties as to performance or merchantability or any other 
+warranties whether expressed or implied. Because of the various hardware 
+and software environments into which the Software may be put, no warranty 
+of fitness for a particular purpose is offered. 
+
+
+OTHER WARRANTIES EXCLUDED
+-------------------------
+www.ordasoft.com shall not be liable for any direct, indirect, 
+consequential, exemplary, punitive or incidental damages arising from the use 
+of the Software. In no event will www.ordasoft.com be liable for any 
+amount greater than what you actually paid for the Software. Should any other 
+warranties be found to exist, such warranties shall be limited in duration 
+to 15 days following the date you purchase the Software.
+

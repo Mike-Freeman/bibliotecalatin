@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<install type="module" version="1.5.0"> 
+<name>Booklibrary New Books Extended FREE</name> 
+<author>OrdaSoft - Andrey Kvasnevskiy</author> 
+<creationDate>2011</creationDate>
+<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license> 
+<copyright>(C) 2011 OrdaSoft - Andrey Kvasnevskiy</copyright>
+<authorEmail>akbet@mail.ru</authorEmail>
+<authorUrl>www.ordasoft.com</authorUrl>
+<version>3.0 FREE</version>
+<description> 
+Displays the newest books from Book Library 
+<p>Added the posssibility to choose the number of books to display, limit the number of words to show from the book description, show/hide the book title, show/hide the book authors
+Vertical and horizontal options, as well as choose to display cover or not and adds SEF compatibility.
+</p> 
+</description> 
+<files> 
+	<filename module="mod_booklibrary_newbooks_ext">mod_booklibrary_newbooks_ext.php</filename>
+	<filename module="index">index.html</filename>
+</files> 
+
+ <params>
+        		<param name="@spacer" type="spacer" default="" label="" description="" /> 
+			<param name="count" type="text" default="1" label="Item Count" description="The number of books to display (default 1)" /> 
+			<param name="words" type="text" default="" label="Description Words Count" description="Word limit for book description.  Zero means no description, blank means no limit" /> 
+
+			<param name="sortnewby" type="list" default="Last Edited" label="Sort New Title By" description="Define what is a new title">
+				<option value="0">Last Edited</option>
+				<option value="1">Last Added</option>
+			</param>
+			
+			<param name="showtitle" type="list" default="Show" label="Show Title" description="Show or hide the book Title">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			
+			<param name="showauthor" type="list" default="Show" label="Show Authors" description="Show or hide the book Authors">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			
+
+			<param name="showcover" type="list" default="Show" label="Show Cover" description="Show or hide the book Cover">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			
+      <param name="description" type="list" default="100 symbols" label="Description" description="Book description capacity">
+        <option value="1">100 symbols</option>
+        <option value="2">500 symbols</option>
+        <option value="3">Whole text</option>
+        <option value="4">Dont show</option>
+      </param>
+      
+			<param name="coversize" type="text" default="127" label="Cover Height" description="Set the height of the cover (width will auto work out by keeping ratio)" />
+
+			<param name="displaytype" type="list" default="Vertical" label="Display Orientation" description="Display either Horizontal or Vertical">
+				<option value="0">Vertical</option>
+				<option value="1">Horizontal</option>
+			</param>
+			
+	</params>	
+	 <params gruop="advanced">     
+	  
+	<param name="moduleclass_sfx" type="text" extension="com_booklibrary"  default="" label="Module Class Suffix" description="Module Class Suffix. A suffix to be applied to the css class of the module; this allows individual module styling." />
+	
+        <param  name="ItemId" 
+                type="text" 
+                multiple="false"
+                size="3"
+                default=""
+                label="ItemId" 
+                description="Enter Id for Menu Item booklibrary" >
+        
+            </param>   
+	</params>	
+ 
+ 
+ <!--JOOMLA 2.5-->
+	<config>
+      <fields name="params" >
+        <fieldset name="basic">
+			
+			<field name="@spacer" type="spacer" default="" label="" description="" /> 
+			<field name="count" type="text" default="1" label="Item Count" description="The number of books to display (default 1)" /> 
+			<field name="words" type="text" default="" label="Description Words Count" description="Word limit for book description.  Zero means no description, blank means no limit" /> 
+
+			<field name="sortnewby" type="list" default="Last Edited" label="Sort New Title By" description="Define what is a new title">
+				<option value="0">Last Edited</option>
+				<option value="1">Last Added</option>
+			</field>
+			
+			<field name="showtitle" type="list" default="Show" label="Show Title" description="Show or hide the book Title">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			
+			<field name="showauthor" type="list" default="Show" label="Show Authors" description="Show or hide the book Authors">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			
+
+			<field name="showcover" type="list" default="Show" label="Show Cover" description="Show or hide the book Cover">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			
+      <field name="description" type="list" default="100 symbols" label="Description" description="Book description capacity">
+        <option value="1">100 symbols</option>
+        <option value="2">500 symbols</option>
+        <option value="3">Whole text</option>
+        <option value="4">Dont show</option>
+      </field>
+      
+			<field name="coversize" type="text" default="127" label="Cover Height" description="Set the height of the cover (width will auto work out by keeping ratio)" />
+
+			<field name="displaytype" type="list" default="Vertical" label="Display Orientation" description="Display either Horizontal or Vertical">
+				<option value="0">Vertical</option>
+				<option value="1">Horizontal</option>
+		</field>
+	</fieldset>	
+	
+   <fieldset name="advanced">
+	     <field name="moduleclass_sfx" type="text" extension="com_booklibrary"  default="" label="Module Class Suffix" description="Module Class Suffix. A suffix to be applied to the css class of the module; this allows individual module styling." />
+             <field  name="ItemId" 
+                type="text" 
+                multiple="false"
+                size="3"
+                default=""
+                label="ItemId" 
+                description="Enter Id for Menu Item booklibrary">
+	      </field>
+	      
+              
+        </fieldset>
+	
+        </fields>
+      
+    </config>	
+    
+</install>

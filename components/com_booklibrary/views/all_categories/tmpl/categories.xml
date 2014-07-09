@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+
+	<layout title="All Categories">
+		<message><![CDATA[Displays all category of a application]]></message>
+	</layout>
+  
+	<fields name="params" >
+	  <fieldset name="params" addfieldpath="/administrator/components/com_booklibrary/elements" label="Params" >
+	    <description>Show all books in one list. This menu item allows user to see all stored and published books in linear list.</description>
+      
+	    <field name="allcategorylayout" type="allcategorylayout" default="" class="inputbox" label="Select layout for all categ" multiple ="false" size="1" description="Choose a layout" required="false" />
+	    <field name="categorylayout" type="categorylayout" default="" class="inputbox" label="Select layout for category" multiple ="false" size="1" description="Choose a layout category" required="false" /> 
+	    <field name="viewbooklayout" type="viewbooklayout" default="" class="inputbox" label="Select layout for book" multiple ="false" size="1" description="Choose a layout book" required="false" />		 
+	    <field name="back_button" type="list" label="Back Button" required="false" description="Show/Hide a Back Button" >
+	      <option value="">Use Global</option>
+	      <option value="0">Hide</option>
+	      <option value="1">Show</option>      
+	    </field>
+	  </fieldset>
+	</fields>
+
+</metadata>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.6" type="plugin" group="search">
+
+    <name>Booklibrary Search</name>
+    <author>OrdaSoft - Andrey Kvasnevskiy;Aleksey Pakholkov</author>
+    <creationDate>2011</creationDate>
+    <copyright>(C) 2011 OrdaSoft - Andrey Kvasnevskiy;Aleksey Pakholkov</copyright>
+    <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+    <authorEmail>akbet@mail.ru</authorEmail>
+    <authorUrl>www.ordasoft.com</authorUrl>
+    <version>2.1</version>
+    <description>Booklibrary Search allows searching books from BookLibrary in the site search.</description>
+    <files>
+	    <filename plugin="BooklibrarySearch">BooklibrarySearch.php</filename>
+	    <filename plugin="BooklibrarySearch">BooklibrarySearch.xml</filename>
+    </files>
+  
+        <params>       
+            <param name="search_limit" type="text" size="5" default="10" label="Search Limit" description="Number of Search items to return">
+        </param>
+      </params>
+    
+    
+    
+   <config>
+      <fields name="params">
+        <fieldset name="basic">
+            <field name="search_limit" type="text" size="5" default="10" label="Search Limit" description="Number of Search items to return"/>
+        </fieldset>
+      </fields>
+    </config>
+ 
+</install>

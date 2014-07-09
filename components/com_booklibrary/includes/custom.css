@@ -1,0 +1,18 @@
+/*--------- by Wonderer ---------*/
+/* rev date: 26 May 2011 */
+div#paginator-custom  ul li { display:table-cell; float:none; }
+hr { color:#ccc; background-color:#ccc; height: 1px; border:0; }
+table.front-end-reviews tr.line-1 td.col-1{ padding-top:12px; }
+table.front-end-reviews tr.line-2 td.col-1 { padding-left:12px; font:normal 9px Verdana; color:#999; }
+table.front-end-reviews tr.line-3 td.col-1 { padding-left:12px; font:normal 12px Arial; color:#333; }
+div#wrapper2 div#main table  tr, div#wrapper2 div#main table  td{/*border:0;*/}
+td.sectiontableheader {background: none repeat scroll 0 0 #EFEFEF;border-right: 1px solid #FFFFFF;
+    color:#333333;font-weight:bold;padding:4px;}
+div#wrapper2 div#main table {-moz-box-sizing:border-box;/*border-collapse:separate;border-spacing:2px;*/
+    display:table;/*margin-bottom:0;*/margin-top:0;text-indent:0;}
+tr.sectiontableentry0 td, tr.sectiontableentry1 td, tr.sectiontableentry2 td {padding:4px;}
+div#wrapper2 div#main table a:link, div#wrapper2 div#main table a:visited {font-weight:normal;text-decoration:none;}
+div#wrapper2 div#main table a:hover {/*color:#0B3768;font-weight:normal;text-decoration:underline;*/background:transparent;}
+div#wrapper2 div#main table.contentpaneopen, div#wrapper2 div#main table.contentpane {margin:0;padding:0;width:100%;
+	border:0;-moz-box-sizing:border-box;border-collapse:separate;border-spacing:2px;display:table;
+    margin-bottom:0;margin-top:0;text-indent:0;}

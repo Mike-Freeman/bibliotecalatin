@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">-->
+<extension type="component" version="3.0" method="upgrade">
+	
+  <name>BookLibrary</name>
+  <creationDate>September 2013</creationDate>
+	<author>Rob de Cleen, Andrey Kvasnevskiy</author>
+	<copyright>This component is released under License from included LICENSE.txt file</copyright>
+  <authorEmail>rob@decleen.com; akbet@ordasoft.com;</authorEmail>
+  <authorUrl>http://www.ordasoft.com</authorUrl>
+	<version>3.0 Free</version>
+	<description>BookLibrary Free</description>
+
+    <!-- Custom un/installer for 1.6 -->
+    <scriptfile>install.uninstall.script.php</scriptfile>
+    <!-- Custom installer for 1.5 -->
+    <installfile>install.booklibrary.php</installfile>
+    <installfile>install.booklibrary.helper.php</installfile>
+    <!-- Custom uninstaller for 1.5 -->
+    <uninstallfile>uninstall.booklibrary.php</uninstallfile>
+
+	<params>
+		<param name="back_button" type="list" default="" label="Back Button" description="Show/Hide a Back Button, that returns you to the previously view page">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+    </param>
+	</params>
+        //SITE FILES
+
+<files folder="../site">
+      <filename>index.html</filename>
+		
+      <filename>includes/functions.js</filename>
+      <filename>includes/adminmenus.php</filename>
+      <filename>includes/category.php</filename>
+      <filename>includes/classes.php</filename>
+      <filename>includes/html.php</filename>
+      <filename>includes/menu.php</filename>
+      <filename>includes/parameters.php</filename>    
+      <filename>includes/mambothandler.php</filename>
+      <filename>includes/booklibrary.css</filename>
+      
+      <filename>functions.php</filename>
+      <filename>compat.joomla1.5.php</filename>
+      <filename>booklibrary.class.language.php</filename>
+      
+    <folder>views</folder>
+		<filename>booklibrary.php</filename>
+		<filename>router.php</filename>
+		<filename>booklibrary.html.php</filename>
+		<filename>booklibrary.class.php</filename>
+		<filename>booklibrary.class.lend.php</filename>
+		<filename>booklibrary.class.lend_request.php</filename>
+		<filename>booklibrary.class.review.php</filename>
+		<filename>booklibrary.main.categories.class.php</filename>
+                
+      <folder>covers</folder>          
+               
+      <folder>language</folder>
+	 <filename>ebooks/index.html</filename>
+      <folder>images</folder>	  
+	 <filename>includes/custom.css</filename>
+	  
+</files>		
+
+      <administration>       
+        <menu img="class:dm_component" >Book Library</menu>
+		<submenu>
+			<menu img="class:module" >Books</menu>
+			<menu img="class:dm_credits"  link="option=com_booklibrary&amp;section=categories">Categories</menu>
+			<menu img="class:move"  task="lend_requests">Lend Requests</menu>
+			<menu img="class:writemess" link="option=com_booklibrary&amp;section=language_manager">Language Manager</menu>
+                        <menu img="class:download" task="show_import_export">Import/Export</menu>
+			<menu img="class:config" task="config_frontend">Settings Frontend</menu>
+			<menu img="class:config" task="config_backend">Settings Backend</menu>
+			<menu img="class:info" task="about">About</menu>
+		</submenu>
+                //ADMIN FILES
+
+		<files folder="../admin"> 
+                         
+          
+        <filename>toolbar_ext.php</filename>
+        <filename>menubar_ext.php</filename>
+
+              <filename>index.html</filename>
+
+              <filename>booklibrary.php</filename>
+              <filename>booklibrary.html.php</filename>
+              <filename>admin.booklibrary.class.ws.php</filename>
+              <filename>admin.booklibrary.class.impexp.php</filename>
+              <filename>admin.booklibrary.class.others.php</filename>
+              <filename>admin.booklibrary.class.conf.php</filename>
+              <filename>toolbar.booklibrary.php</filename>
+              <filename>toolbar.booklibrary.html.php</filename>
+
+        <filename>isbn_build.php</filename>
+        <filename>doc/releasenote.php</filename>
+        <filename>doc/changelog.html</filename>
+        <filename>doc/LICENSE.txt</filename>
+        <filename>doc/README.txt</filename>
+        <filename>doc/index.html</filename>
+        <filename>exports/index.html</filename>
+        <filename>exports/csv.xsl</filename>
+        <filename>exports/sample_data.xml</filename>
+     
+        <filename>install.booklibrary.php</filename>
+        <filename>install.booklibrary.helper.php</filename> 
+        <filename>uninstall.booklibrary.php</filename>  
+           
+        <folder>images</folder>
+        <folder>elements</folder>      
+		</files>
+	</administration>
+</extension>
